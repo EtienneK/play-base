@@ -34,6 +34,10 @@ object Build extends sbt.Build {
     "com.codahale.metrics" % "metrics-core" % "3.0.1",
     "com.codahale.metrics" % "metrics-jvm" % "3.0.1",
     "com.codahale.metrics" % "metrics-json" % "3.0.1",
+    "com.codahale.metrics" % "metrics-healthchecks" % "3.0.1",
+
+    // Secure Social
+    "securesocial" %% "securesocial" % "2.1.2",
 
     // Camel
     "org.apache.camel" % "camel-core" % "2.12.2",
@@ -43,6 +47,7 @@ object Build extends sbt.Build {
       exclude ("org.apache.deltaspike.core", "deltaspike-core-impl")
       exclude ("org.apache.deltaspike.cdictrl", "deltaspike-cdictrl-api"))
 
-  val main = play.Project(appName, appVersion, appDependencies).settings()
+  val main = play.Project(appName, appVersion, appDependencies).settings(
+    resolvers += Resolver.url("sbt-plugin-releases", new URL("http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns))
 
 }
