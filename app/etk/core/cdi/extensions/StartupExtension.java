@@ -1,4 +1,4 @@
-package cdi;
+package etk.core.cdi.extensions;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +11,9 @@ import javax.enterprise.inject.spi.BeanManager;
 import javax.enterprise.inject.spi.Extension;
 import javax.enterprise.inject.spi.ProcessBean;
 
-public class CdiExtension implements Extension {
+import etk.core.annotations.Startup;
+
+public class StartupExtension implements Extension {
 
 	private final Set<Bean<?>> startupBeans = new HashSet<Bean<?>>();
 

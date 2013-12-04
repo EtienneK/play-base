@@ -1,4 +1,4 @@
-package cdi;
+package etk.core.jpa;
 
 import play.db.jpa.JPA;
 

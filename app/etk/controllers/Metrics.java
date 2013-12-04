@@ -1,4 +1,4 @@
-package controllers.server;
+package etk.controllers;
 
 import java.util.concurrent.TimeUnit;
 

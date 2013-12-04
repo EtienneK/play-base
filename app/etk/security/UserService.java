@@ -1,4 +1,4 @@
-package cdi.auth;
+package etk.security;
 
 import securesocial.core.Identity;
 import securesocial.core.IdentityId;

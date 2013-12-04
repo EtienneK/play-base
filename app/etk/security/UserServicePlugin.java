@@ -1,4 +1,4 @@
-package cdi.auth;
+package etk.security;
 
 import org.apache.deltaspike.core.api.provider.BeanProvider;
 
